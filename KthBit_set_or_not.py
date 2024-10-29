@@ -22,3 +22,16 @@ def kthbitset(n,k):
 
 
 kthbitset(5,3)
+
+or
+
+
+def kthbitset(n,k):
+    if ((n >> (k-1)) & 1 ):
+        print('set')
+
+    else:
+        print("Not set")
+
+
+kthbitset(5,3)
